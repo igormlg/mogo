@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300i,300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <title>Mogo</title>
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".accordion__content").hide();
+        $(".accordion__header").click(function(evt) {
+          evt.preventDefault();
+          var $result = $(this).next(".accordion__content");
+          if ($result.is(":hidden")) {
+            $result.slideDown(300);
+            $(this).addClass("active");
+          } else {
+            $result.slideUp(300);
+            $(this).removeClass("active");
+          }
+        }); // end click
+      }); // end ready
+    </script>
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="header-wrapper">
+        <nav class="header-main-container">
+          <h1 class="header-main__logo">MoGo</h1>
+          <div class="main-navigation">
+            <ul class="main-navigation__user">
+              <li><a href="">About</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">Work</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <div class="main-navigation__action">
+              <ul class="main-navigation__basket">
+                <li>
+                  <a href=""
+                    ><span class="visually-hidden">Basket</span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17.62"
+                      height="14.031"
+                      viewBox="0 0 17.62 14.031"
+                    >
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="SHOPPING_CART"
+                        data-name="SHOPPING CART"
+                        class="cls-1"
+                        d="M1501.73,40.663h0l-2.48,5.5h0a0.815,0.815,0,0,1-.7.485h0l-7.12.475,0.41,1.177h7.76a1.65,1.65,0,1,1-1.65,1.651h-7.7a1.65,1.65,0,1,1-1.65-1.651h1.49l-3.18-9.075h-1.89a0.825,0.825,0,0,1,0-1.65h2.48a0.835,0.835,0,0,1,.78.554h0l0.48,1.373h12.21a0.826,0.826,0,0,1,.83.825A0.941,0.941,0,0,1,1501.73,40.663Zm-12.39.487,1.52,4.357,7.09-.473,1.75-3.884h-10.36Z"
+                        transform="translate(-1484.19 -37.563)"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <ul class="main-navigation__search">
+                <li>
+                  <a href=""
+                    ><span class="visually-hidden">Search</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17.62"
+                      height="17.625"
+                      viewBox="0 0 17.62 17.625"
+                    >
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="MAGNIFYING_GLASS"
+                        data-name="MAGNIFYING GLASS"
+                        class="cls-1"
+                        d="M1561.32,50.983a1.652,1.652,0,0,1-2.34,2.334h0l-4.83-4.836a6.627,6.627,0,1,1,2.33-2.334l4.84,4.836h0ZM1550.8,37.85a4.95,4.95,0,1,0,4.95,4.95A4.952,4.952,0,0,0,1550.8,37.85Z"
+                        transform="translate(-1544.19 -36.188)"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <p class="header-title-one">Creative Template</p>
+        <h2 class="header-title-two">
+          Welcome <br />
+          to mogo
+        </h2>
+        <a class="header-learn" href="">Learn more</a>
+      </div>
+      <!--footer main-->
+      <footer class="main-footer">
+        <ul class="main-footer__navigation">
+          <li
+            class="main-footer__items main-footer__items_active main-footer__items_active-line"
+          >
+            <a href="">
+              <span class="main-footer__numbers main-footer__numbers_active"
+                >01</span
+              >
+              Intro
+            </a>
+          </li>
+          <li class="main-footer__items">
+            <a href="">
+              <span class="main-footer__numbers">02</span>
+              Work
+            </a>
+          </li>
+          <li class="main-footer__items">
+            <a href="">
+              <span class="main-footer__numbers">03</span>
+              About
+            </a>
+          </li>
+          <li class="main-footer__items">
+            <a href="">
+              <span class="main-footer__numbers">04</span>
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </header>
+    <!--part-->
+    <article class="article-points">
+      <div class="info-content-wrapper">
+        <p>What we do</p>
+        <h2>Story about us</h2>
+        <p class="info-content-wrapper__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa
+          vero ipsum incidunt eos veniam. Itaque sint, molestias ducimus vitae
+          id ea, et ab, vero molestiae debitis facere consequuntur sed!
+        </p>
+      </div>
+      <div class="image-links-wrapper">
+        <div href="" class="link-section">
+          <div class="link-section_img">
+            <img src="assets/images/page_link_01.jpg" alt="" />
+          </div>
+          <div class="title-img">
+            <img src="assets/images/USERS.png" alt="" /> Super team
+          </div>
+        </div>
+
+        <div href="" class="link-section">
+          <div class="link-section_img">
+            <img src="assets/images/page_link_02.jpg" alt="" />
+          </div>
+          <div class="title-img">
+            <img src="assets/images/USERS.png" alt="" /> Super team
+          </div>
+        </div>
+
+        <div href="" class="link-section">
+          <div class="link-section_img">
+            <img src="assets/images/page_link_03.jpg" alt="" />
+          </div>
+          <div class="title-img">
+            <img src="assets/images/USERS.png" alt="" /> Super team
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="table-info">
+      <table class="table-01">
+        <tr class="table-01__raw-01">
+          <td>42</td>
+          <td>123</td>
+          <td>15</td>
+          <td>99</td>
+          <td>24</td>
+        </tr>
+        <tr class="table-01__raw-02">
+          <td>Web disigned projects</td>
+          <td>Happy client</td>
+          <td>Award winner</td>
+          <td>Cup of coffee</td>
+          <td>Members</td>
+        </tr>
+      </table>
+    </div>
+    <!-- part -->
+    <section class="article-points">
+      <div class="info-content-wrapper">
+        <p>Work with us</p>
+        <h2>Amazing services</h2>
+        <p class="info-content-wrapper__text visually-hidden">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa
+          vero ipsum incidunt eos veniam. Itaque sint, molestias ducimus vitae
+          id ea, et ab, vero molestiae debitis facere consequuntur sed!
+        </p>
+      </div>
+
+      <div class="services-content">
+        <div class="contents-wrapper">
+          <h3 class="icons">Photography</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          </p>
+        </div>
+
+        <div class="contents-wrapper contents-wrapper__element2">
+          <h3>Web designed</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          </p>
+        </div>
+
+        <div class="contents-wrapper contents-wrapper__element3">
+          <h3>Creativity</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          </p>
+        </div>
+
+        <div class="contents-wrapper contents-wrapper__element4">
+          <h3>SEO</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            deleniti
+          </p>
+        </div>
+
+        <div class="contents-wrapper contents-wrapper__element5">
+          <h3>CSS/HTML</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            deleniti
+          </p>
+        </div>
+
+        <div class="contents-wrapper contents-wrapper__element6">
+          <h3>Digital</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            deleniti
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- part Amazing-->
+    <div class="article-amazing">
+      <div class="wrapper-amazing">
+        <div class="info-content-amazing">
+          <p class="amazing-p">For all devices</p>
+          <h2 class="amazing-h">Unique designe</h2>
+        </div>
+
+        <div class="wrapper-iphones">
+          <img class="ipad-img" src="assets/images/ipad.png" alt="iPad" />
+          <img class="iphone-img" src="assets/images/iphone.png" alt="iPhone" />
+        </div>
+      </div>
+    </div>
+
+    <article class="article-points">
+      <div class="info-content-wrapper">
+        <p>Service</p>
+        <h2>What we do</h2>
+        <p class="info-content-wrapper__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa
+          vero ipsum incidunt eos veniam. Itaque sint, molestias ducimus vitae
+          id ea, et ab, vero molestiae debitis facere consequuntur sed!
+        </p>
+      </div>
+
+      <section class="we-do">
+        <div class="we-do__item">
+          <img
+            src="assets/images/we-do.jpg"
+            alt="what we do"
+            width="570px"
+            height="380px"
+          />
+        </div>
+        <div class="we-do__item">
+          <div class="accordion">
+            <div class="accordion__item accordion__item-img1">
+              <h3 class="accordion__header">Photography</h3>
+              <div class="accordion__content">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestias, enim porro sapiente quam cum voluptatibus nulla nam
+                  laboriosam debitis ab! Vel blanditiis quas animi. Eveniet,
+                  excepturi voluptate! Odit, suscipit sed?
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item accordion__item-img2">
+              <h3 class="accordion__header">Creativity</h3>
+              <div class="accordion__content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+                  excepturi reprehenderit fugiat repudiandae maxime recusandae
+                  minus quos, quibusdam porro adipisci, autem similique at
+                  soluta? Tempore mollitia laboriosam sapiente? Sequi, impedit!
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item accordion__item-img3">
+              <h3 class="accordion__header">Web designe</h3>
+              <div class="accordion__content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Harum amet animi voluptate possimus rem vitae recusandae. Amet
+                  voluptates veritatis error perferendis, corporis vel deleniti
+                  libero atque, necessitatibus temporibus sit harum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <section class="grey-block">
+      <div class="grey-block__rel">
+        <a class="grey-buttons grey-buttons__prev" href="#">Prev</a>
+        <a class="grey-buttons grey-buttons__next" href="#">Next</a>
+
+        <div class="grey-block__item">
+          <div class="grey-block__container">
+            <div class="grey-block__photo-conteiner">
+              <img src="" alt="photo" />
+            </div>
+            <p class="grey-block__cite">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Praesentium, ipsam! Amet nulla iure ipsa. Debitis modi assumenda
+              quibusdam nemo illo quod ad, maxime, ipsum numquam quos ipsam
+              autem sint! Eaque? Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit."
+            </p>
+            <p class="grey-block__author">Jon Doe</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--part team-->
+    <article class="article-points article-points__people">
+      <div class="info-content-wrapper">
+        <p>Who we are</p>
+        <h2>Meet our team</h2>
+        <p class="info-content-wrapper__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa
+          vero ipsum incidunt eos veniam. Itaque sint, molestias ducimus vitae
+          id ea, et ab, vero molestiae debitis facere consequuntur sed!
+        </p>
+      </div>
+
+      <div class="image-links-wrapper">
+        <div class="image-links-wrapper-2">
+          <div href="" class="link-section">
+            <div class="link-section_img">
+              <img src="assets/images/people01.png" alt="" />
+            </div>
+
+            <div class="title-img">
+              <div class="social">
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="social-name">Matthew Dix</p>
+          <p class="social-text">Graphic designer</p>
+        </div>
+
+        <div class="image-links-wrapper-2">
+          <div href="" class="link-section">
+            <div class="link-section_img">
+              <img src="assets/images/people02.png" alt="" />
+            </div>
+
+            <div class="title-img">
+              <div class="social">
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="social-name">Cristopher Campbel</p>
+          <p class="social-text">Branding/UX design</p>
+        </div>
+
+        <div class="image-links-wrapper-2">
+          <div href="" class="link-section">
+            <div class="link-section_img">
+              <img src="assets/images/people03.png" alt="" />
+            </div>
+            <div class="title-img">
+              <div class="social">
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a class="social__item" href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="social-name">Michael Fertig</p>
+          <p class="social-text">Developer</p>
+        </div>
+      </div>
+
+      <!--
+      <article class="article-points">
+        <div class="info-content-wrapper">
+          <p>What we do</p>
+          <h2>Story about us</h2>
+          <p class="info-content-wrapper__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa
+            vero ipsum incidunt eos veniam. Itaque sint, molestias ducimus vitae
+            id ea, et ab, vero molestiae debitis facere consequuntur sed!
+          </p>
+        </div>
+       <section class="about">
+         <div class="about__item">
+           <div class="about__img">
+             <img src="assets/images/page_link_01.jpg" alt="">
+           </div>
+           <div class="about__text">Super team</div>
+         </div>
+         <div class="about__item">
+          <div class="about__img">
+            <img src="assets/images/page_link_02.jpg" alt="">
+          </div>
+         </div>
+         <div class="about__item">
+          <div class="about__img">
+            <img src="assets/images/page_link_03.jpg" alt="">
+          </div>
+         </div>-->
+    </article>
+
+    <section class="logos">
+      <div class="logos__item">
+        <img src="assets/images/logos.png" alt="" />
+      </div>
+    </section>
+
+    <article class="article-points">
+      <div class="info-content-wrapper">
+        <p>What we do</p>
+        <h2>Some of our work</h2>
+        <p class="info-content-wrapper__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa
+          vero ipsum incidunt eos veniam. Itaque sint, molestias ducimus vitae
+          id ea, et ab, vero molestiae debitis facere consequuntur sed!
+        </p>
+      </div>
+      <section class="works">
+        <div class="works__col">
+          <div class="works__item">
+            <img src="assets/" alt="">
+
+          </div>
+          
+        </div>
+        <div class="works__col">2</div>
+        <div class="works__col">3</div>
+        <div class="works__col">4</div>
+      </section>
+    </article>
+  </body>
+</html>
